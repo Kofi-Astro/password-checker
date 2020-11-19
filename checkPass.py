@@ -49,10 +49,13 @@ def main(argv):
     #             f'{password} was found {count} times. You should probably change it')
     #     else:
     #         print(f'{password} was Not found. Feel free to use it.')
+
     return 'Done Captain'
 
 
-# main(sys.argv[1:])
+if __name__ == '__main__':
 
-password = input('Your password: ')
-main(password)
+    # sys.exit(main(sys.argv[1:]))
+
+    password = input('Your password: ')
+    sys.exit(main(password))
